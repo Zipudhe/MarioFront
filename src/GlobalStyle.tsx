@@ -1,16 +1,18 @@
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
   html {
-    // Font sizes
-    --header-font-size: 48px;
+    // Desktop Font sizes
+    --title-font-size: 48px;
     --subtitle-font-size: 24px;
     --normal-font-size: 18px;
     --legenda-font-size: 14px;
+
+    // Mobile Font Sizes
     --mobile-title-font-size: 36px;
     --mobile-subtitle-font-size: 18px;
     --mobile-normal-font-size: 16px;
-    --mobile-legenda-font-size: 14px;
+    --mobile-legenda-font-size: 12px;
 
     // Fonts styles
     --font-family: 'Roboto', 'sans-serif';
@@ -23,14 +25,15 @@ export const GlobalStyle = createGlobalStyle`
     // Color scheme
     --main-color: '#FD2D2D';
     --secondary-color: '#FBC406';
-    --black: '#000';
-    --white: '#fff';
+    --black-bg: #000;
+    --white-bg: #fff;
   }
 
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-family);
   }
 `
 
