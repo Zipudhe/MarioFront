@@ -2,7 +2,7 @@ import React, { FC } from 'react'
 import { StyledDescription, StyledImage, StyledWrapper } from './style'
 import { Subtitle } from '../Typograph/Subtitle'
 
-interface MediaCardProps {
+export interface MediaCardProps {
   url: string,
   description: string
 }
